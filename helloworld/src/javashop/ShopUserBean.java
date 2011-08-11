@@ -7,6 +7,7 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.users.User;
+import com.google.appengine.api.datastore.Blob;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class ShopUserBean {
@@ -22,40 +23,108 @@ public class ShopUserBean {
     
     @Persistent
     private String nickname;
-                
-    public ShopUserBean(User user_info,
-    					String email,
-    					String nickname) {
-        this.user = user_info;
-        this.email = email;
-        this.nickname = nickname;
-    }
 
-    public Key getKey() {
-        return this.key;
-    }
+    @Persistent
+    private String apikey;
+    
+    @Persistent
+    private Integer apicount;
+    
+    @Persistent
+    private String realname;
+    
+    @Persistent
+    private String phone;
+    
+    @Persistent
+    private String address;
 
-    public User getUser() {
-    	return this.user;
+    @Persistent
+    private Blob photofile;
+
+    public ShopUserBean(User user, String nickname, String email) {
+    	setUser(user);
+    	setNickname(nickname);
+    	setEmail(email);
     }
     
-    public String getNickname() {
-    	return this.nickname;
-    }
-    
-    public String getEmail() {
-    	return this.email;
-    }
-            
-    public void setUser(User userInfo) {
-    	this.user = userInfo;
-    }
-    
-    public void setNickname(String nickname) {
-    	this.nickname = nickname;
-    }
-    
-    public void setEmail(String email) {
-    	this.email = email;
-    }
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setKey(Key key) {
+		this.key = key;
+	}
+
+	public Key getKey() {
+		return key;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setApikey(String apikey) {
+		this.apikey = apikey;
+	}
+
+	public String getApikey() {
+		return apikey;
+	}
+
+	public void setApicount(Integer apicount) {
+		this.apicount = apicount;
+	}
+
+	public Integer getApicount() {
+		return apicount;
+	}
+
+	public void setRealname(String realname) {
+		this.realname = realname;
+	}
+
+	public String getRealname() {
+		return realname;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setPhotofile(Blob photofile) {
+		this.photofile = photofile;
+	}
+
+	public Blob getPhotofile() {
+		return photofile;
+	}
 }

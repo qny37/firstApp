@@ -1,5 +1,4 @@
 package javashop;
-
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManagerFactory;
 

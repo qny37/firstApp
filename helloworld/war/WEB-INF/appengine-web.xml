@@ -3,9 +3,12 @@
 	<application>qny37-test</application>
 	<version>1</version>
 	
-	<!-- Configure java.util.logging -->
+	<!-- Configure java.util.logging -->	
 	<system-properties>
-		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+		<property name="java.util.logging.config.file" value="WEB-INF/log4j.properties"/>
+		<property name="css_path" value="/css/1.0"/>
 	</system-properties>
 	
+	<ssl-enabled>true</ssl-enabled>
+	<sessions-enabled>true</sessions-enabled>
 </appengine-web-app>

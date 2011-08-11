@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_17"/>
 	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="lib" path="C:/eclipse_indigo/plugins/com.google.appengine.eclipse.sdkbundle_1.5.2.r37v201107211953/appengine-java-sdk-1.5.2/lib/impl/appengine-api-stubs.jar"/>
 	<classpathentry kind="lib" path="C:/eclipse_indigo/plugins/com.google.appengine.eclipse.sdkbundle_1.5.2.r37v201107211953/appengine-java-sdk-1.5.2/lib/impl/appengine-local-runtime.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-codec-1.5.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

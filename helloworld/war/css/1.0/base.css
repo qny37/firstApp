@@ -1,0 +1,27 @@
+#logo {
+    font-family:"Arial Black";
+    font-size:30px;
+}
+
+#menu {
+    font-size:15px;
+    width:100%;
+    background: none repeat scroll 0% 0%;
+    border-top:1px dashed #bbbbbb;
+    border-bottom:1px dashed #bbbbbb;
+}
+
+body {
+    font-size:12px;
+    font-family:"Lucida Grande";
+    color:#333;
+}
+
+label {
+    font-size:12px;
+    font-family:"Lucida Grande";
+    color:#333;
+}
+
+a:link, a:visited { color: #888; text-decoration:none; }
+a:hover { color: #222; }
